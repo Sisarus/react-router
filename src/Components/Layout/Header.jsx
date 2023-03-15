@@ -83,7 +83,7 @@ function Header() {
                   <li>
                     <NavLink
                       className="dropdown-item"
-                      to="/product"
+                      to="/product/"
                     >
                       Product
                     </NavLink>
