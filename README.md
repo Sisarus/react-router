@@ -11,9 +11,11 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-
 Notes for me
 Added router
+
 ```
 npm i react-router-dom@6.4.3
 ```
+
+https://reactrouter.com/en/main/start/tutorial

@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../Images/react.png";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -28,59 +29,88 @@ function Header() {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a
-                  className="nav-link active"
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav-link active text-danger"
+                      : "nav-link"
+                  }
                   aria-current="page"
-                  href="#"
+                  to="/"
                 >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#"
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav-link active text-danger"
+                      : "nav-link"
+                  }
+                  to="/about"
                 >
-                  Link
-                </a>
+                  About
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav-link active text-danger"
+                      : "nav-link"
+                  }
+                  to="/cryptoDetail/BTC/10"
+                >
+                  Crypto Detail
+                </NavLink>
               </li>
               <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav-link active text-danger dropdown-toggle"
+                      : "nav-link dropdown-toggle"
+                  }
+                  to="/product"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
-                </a>
+                  Product
+                </NavLink>
                 <ul className="dropdown-menu">
                   <li>
-                    <a
+                    <NavLink
                       className="dropdown-item"
-                      href="#"
+                      to="/product"
                     >
-                      Action
-                    </a>
+                      Product
+                    </NavLink>
                   </li>
                   <li>
-                    <a
+                    <NavLink
                       className="dropdown-item"
-                      href="#"
+                      to="/product/create"
                     >
-                      Another action
-                    </a>
+                      Create Product
+                    </NavLink>
                   </li>
                   <li>
-                    <hr className="dropdown-divider" />
+                    <NavLink
+                      className="dropdown-item"
+                      to="/product/details/5"
+                    >
+                      Product Details
+                    </NavLink>
                   </li>
                   <li>
-                    <a
+                    <NavLink
                       className="dropdown-item"
-                      href="#"
+                      to="/product/list"
                     >
-                      Something else here
-                    </a>
+                      Product List
+                    </NavLink>
                   </li>
                 </ul>
               </li>
