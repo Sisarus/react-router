@@ -1,17 +1,21 @@
 # Router with Bootstrap
 
-## Clone project and then install node modules. Nodejs version 16.0.0
+## General
+
+## Setup
+
+To get started, clone the repository and navigate to the project directory. Then, run the following command to install the required dependencies:
 ```
 npm install
 ```
+## Run
 ```
 npm start
 ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This command runs the app in development mode. You can open http://localhost:3000 in your browser to view the application.
 
-### Notes for me
+## Notes for me
 Added router
 
 ```
